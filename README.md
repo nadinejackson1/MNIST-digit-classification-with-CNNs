@@ -1,9 +1,6 @@
 # MNIST Digit Classification with Convolutional Neural Networks
 
-For this exercise, improved Fashion MNIST to over 99.5% accuracy by adding only a single convolutional layer and a single MaxPooling 2D layer to the model from [TensorFlow callbacks using MNIST](https://github.com/nadinejackson1/tensorflow-callbacks-using-mnist)
-MNIST Digit Classification with Convolutional Neural Networks
-
-This project demonstrates the use of Convolutional Neural Networks (CNNs) to classify handwritten digits from the famous MNIST dataset. 
+This project demonstrates the use of Convolutional Neural Networks (CNNs) to classify handwritten digits from the famous MNIST dataset. Previous Exercise: [TensorFlow callbacks using MNIST](https://github.com/nadinejackson1/tensorflow-callbacks-using-mnist) 
 
 The goal is to achieve at least 99.5% accuracy on the training set within 10 epochs.
 
@@ -26,11 +23,11 @@ Before feeding the images into the CNN, we need to preprocess the data:
 
 1. Reshape the images to add an extra dimension, representing the color channel (in this case, grayscale). This is done to comply with the standard input format for CNNs, which usually expect 3D tensors for image data.
 
-    images = images.reshape(-1, 28, 28, 1)
+        images = images.reshape(-1, 28, 28, 1)
 
 2. Normalize the pixel values to be between 0 and 1 by dividing all values by the maximum (255).
 
-    images = images / 255.0
+        images = images / 255.0
 
 ### Model Architecture
 
